@@ -1,0 +1,35 @@
+{ pkgs, pkgs-unstable, config, ... }:
+{
+  environment.systemPackages = [
+    pkgs.wget
+    pkgs.vim
+    pkgs.udiskie
+    pkgs.killall
+    pkgs.git
+    pkgs.alacritty
+    pkgs.ghostty
+    pkgs.ripgrep
+    pkgs.nano
+    pkgs.neovim 
+    pkgs.xdg-desktop-portal
+    pkgs.xdg-desktop-portal-gtk
+    pkgs.xdg-desktop-portal-hyprland
+    pkgs.tree
+    pkgs.yazi
+    pkgs.power-profiles-daemon
+    pkgs.eza
+    pkgs.xfce.thunar
+    pkgs.inxi
+    pkgs.which
+    #    pkgs.sddm-astronaut
+    pkgs.bibata-cursors
+    pkgs.lutris
+    pkgs.python3
+    pkgs.sqlite
+    pkgs.starship
+    pkgs.oh-my-zsh
+    pkgs.helix
+    pkgs.greetd
+    pkgs.tuigreet
+  ];
+}
