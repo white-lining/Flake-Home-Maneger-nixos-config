@@ -42,7 +42,7 @@
 
   imports = [
     ./home-modules/home_packages.nix #
-    ./home-modules/hyprland_whole.nix # TODO: Implement
+    ./home-modules/hyprland_whole.nix # 
     ./home-modules/nixvim/nixvim.nix
     ./home-modules/hyprlock.nix #
     #   ./home-modules/hypridle.nix #

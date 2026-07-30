@@ -39,6 +39,7 @@
       pkgs.jp2a
       pkgs.ffmpeg
       pkgs.gcc
+      pkgs.cmake
     ];
   };
 }
