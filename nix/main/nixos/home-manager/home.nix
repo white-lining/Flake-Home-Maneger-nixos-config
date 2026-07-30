@@ -5,8 +5,8 @@
     homeDirectory = "/home/kumoren";
     stateVersion = "25.11";
     pointerCursor = {
-      package = pkgs.numix-cursor-theme;
-      name = "Numix-Cursor";
+      package = pkgs.bibata-cursors;
+      name = "Bibata-Modern-Ice";
       size = 24;
       hyprcursor.enable = true;
       gtk.enable = true;
@@ -42,17 +42,17 @@
 
   imports = [
     ./home-modules/home_packages.nix #
-    ./home-modules/hyprland_stable.nix #
+    ./home-modules/hyprland_whole.nix # 
     ./home-modules/nixvim/nixvim.nix
     ./home-modules/hyprlock.nix #
-    ./home-modules/hypridle.nix #
+    #   ./home-modules/hypridle.nix #
     ./home-modules/wlogout.nix #
     ./home-modules/terminal/alacritty.nix #
     ./home-modules/helix.nix
     ./home-modules/bash.nix #
     ./home-modules/git.nix #
     ./home-modules/fuzzel.nix #
-    ./home-modules/waybar_block_floating.nix  #
+    ./home-modules/waybar_block.nix # TODO: Create
     ./home-modules/yazi.nix #
     ./home-modules/music.nix #
     ./home-modules/zsh.nix #

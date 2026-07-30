@@ -21,13 +21,15 @@
     pkgs.xfce.thunar
     pkgs.inxi
     pkgs.which
-    pkgs.sddm-astronaut
-    pkgs.numix-cursor-theme
+    #    pkgs.sddm-astronaut
+    pkgs.bibata-cursors
     pkgs.lutris
     pkgs.python3
     pkgs.sqlite
     pkgs.starship
     pkgs.oh-my-zsh
     pkgs.helix
+    pkgs.greetd
+    pkgs.tuigreet
   ];
 }

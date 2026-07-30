@@ -5,23 +5,24 @@
 
     settings = {
       mainBar = {
-
         layer = "top";
         output = "HDMI-A-1";
         position = "top";
-        # height = 38;
+        # height = 32;
 
-        margin-top = 5;
-        margin-left = 8;
-        margin-right = 8;
+        margin-top = 0;
+        margin-left = 0;
+        margin-right = 0;
 
-        modules-left = [ "hyprland/workspaces"
-                         "custom/rightArrowFull"
+        modules-left = [ 
+                         "hyprland/workspaces"
+                         "custom/rightArrowFull" 
                          "custom/rightArrowHollow"
                          "disk"
-                         "custom/rightArrowFull"];
-
-        modules-center = [ "custom/leftArrowFull"
+                         "custom/rightArrowFull"
+                       ];
+        modules-center = [
+                           "custom/leftArrowFull"
                            "memory"
                            "custom/leftArrowHollow"
                            "custom/leftArrowFull"
@@ -29,19 +30,21 @@
                            "custom/rightArrowFull"
                            "custom/rightArrowHollow"
                            "cpu"
-                           "custom/rightArrowFull"];
-
-        modules-right = [ "custom/leftArrowFull"
+                           "custom/rightArrowFull"
+                         ];
+        modules-right = [
+                          "custom/leftArrowFull"
                           "clock#1"
                           "custom/leftArrowHollow"
                           "custom/leftArrowFull"
                           "clock#2"
                           "custom/leftArrowHollow"
                           "custom/leftArrowFull"
-                          "clock#3" ];
+                          "clock#3"
+                        ];
 
         "hyprland/workspaces" = {
-          all-outputs = true;
+          all_outputs = true;
           format = "{icon}";
           format-icons = {
             active = "󰣏";
@@ -55,154 +58,123 @@
         "custom/identity" = {
           format = "<span size='xx-large'></span>";
           tooltip = false;
+          on-click = "w-logout";
+          expand = true;
         };
 
         "custom/leftArrowFull" = {
           format = "<span size='xx-large'></span>";
-          tooltop = false;
-
+          tooltip = false;
         };
         "custom/rightArrowFull" = {
           format = "<span size='xx-large'></span>";
-          tooltop = false;
-        };
-
-        "custom/rightArrowHollow" = {
-          format = "<span size='xx-large'></span>";
-          tooltop = false;
+          tooltip = false;
         };
         "custom/leftArrowHollow" = {
           format = "<span size='xx-large'></span>";
-          tooltop = false;
+          tooltip = false;
+        };
+        "custom/rightArrowHollow" = {
+          format = "<span size='xx-large'></span>";
+          tooltip = false;
         };
 
         "cpu" = {
           interval = 5;
-          format = "<span size='xx-large'>󱎂</span> {usage:2}%";
+          format = "<span size='xx-large'>󰯙</span>{usage:2}%";
         };
+
         "memory" = {
           interval = 5;
           format = "<span size='xx-large'>󱩅</span> {}%";
         };
+
         "disk" = {
-          interval = 5;
-          format = "<span size='xx-large'>󱠆</span> {percentage_used:2}%";
-          path = "/";
+          interval = 20;
+          format = "<span size='xx-large'>󱠆</span>{percentage_used:2}%";
         };
 
         "clock#1" = {
+          timezone = "America/Argentina/Cordoba";
           format = " {:%a} ";
           tooltip = false;
         };
+
         "clock#2" = {
           timezone = "America/Argentina/Cordoba";
           format = " {:%H:%M} ";
           tooltip = false;
         };
+
         "clock#3" = {
+          timezone = "America/Argentina/Cordoba";
           format = " {:%m-%d} ";
           tooltip = false;
         };
-        
-      };
 
+      };
     };
 
     style = ''
       * {
         font-family: InconsolataLGC Nerd Font;
         font-weight: bold;
+        font-size: 15px;
       }
 
       window#waybar {
-        background: #ccdfeb;
+        background: #e3f4ff;
         color: #1c2b36;
-        border-radius: 2px;
       }
 
       #workspaces {
         background-color: #1c2b36;
-        color: #ccdfeb;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        font-size: 15px;
+        color: #e3f4ff;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
       }
 
-      #workspaces button {
+      #workspaces button{
         background-color: #1c2b36;
-        color: #ccdfeb;
-        font-size: 15px;
+        color: #e3f4ff;
       }
 
-      #workspaces button.active {
+      #workspaces button.active{
         background-color: #1c2b36;
         color: #8ffdff;
-        font-size: 15px;
       }
 
       #custom-identity {
         background: #1c2b36;
-        color: #75fdff;
+        color: #8ffdff;
         padding-left: 5px;
         padding-right: 10px;
-        min-width: 30px;
-        margin-top: 5px;
-        margin-bottom: 5px;
       }
 
       #custom-rightArrowFull,
-      #custom-leftArrowFull {
-        color: #1c2b36;
-        background: #ccdfeb;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-      }
       #custom-rightArrowHollow,
-      #custom-leftArrowHollow {
+      #custom-leftArrowFull,
+      #custom-leftArrowHollow{
         color: #1c2b36;
-        background: #ccdfeb;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 5px;
-        margin-bottom: 5px;
+        background: #e3f4ff;
       }
 
-      #memory {
-        color: #1575bf;
-        background: #1c2b36;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-      }
-      #cpu {
-        color: #1575bf;
-        background: #1c2b36;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-      }
+      #memory,
+      #cpu,
       #disk {
-        color: #1575bf;
+        color: #8ffdff;
         background: #1c2b36;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 5px;
-        margin-bottom: 5px;
       }
 
       #clock.1,
       #clock.2,
-      #clock.3 {
-        font-size: 15px;
-        margin-top: 5px;
-        margin-bottom: 5px;
+      #clock.3{
         background: #1c2b36;
-        color: #ccdfeb;
+        color: #e3f4ff;
       }
     '';
   };
 }
+

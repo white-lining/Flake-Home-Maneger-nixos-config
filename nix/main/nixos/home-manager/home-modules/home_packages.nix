@@ -6,6 +6,7 @@
       pkgs.pipes 
       pkgs.clock-rs
       pkgs.mako 
+      pkgs.libnotify
       pkgs.onlyoffice-desktopeditors 
       pkgs.fuzzel 
       pkgs.waybar 
@@ -31,13 +32,14 @@
       pkgs.slurp
       pkgs.tmux
       pkgs.manga-cli
+      pkgs.zathura
+      pkgs.pup
+      pkgs.curl
       pkgs-unstable.protonup-rs
       pkgs.jp2a
       pkgs.ffmpeg
       pkgs.gcc
-      # pkgs.ddcutil
-      # pkgs.i2c-tools
-      # pkgs.brillo
+      pkgs.cmake
     ];
   };
 }

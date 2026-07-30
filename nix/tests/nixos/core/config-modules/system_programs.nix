@@ -29,7 +29,7 @@
     hyprland = {
       enable = true;
       xwayland.enable = true;
-      # package = pkgs-unstable.hyprland;
+      package = pkgs-unstable.hyprland;
     };
 
     gamemode.enable = true;
@@ -48,9 +48,9 @@
   xdg.portal = {
     enable = true;
     extraPortals = [
-      pkgs.xdg-desktop-portal-gtk
-      pkgs.xdg-desktop-portal-hyprland
-      pkgs.xdg-desktop-portal
+      pkgs-unstable.xdg-desktop-portal-gtk
+      pkgs-unstable.xdg-desktop-portal-hyprland
+      pkgs-unstable.xdg-desktop-portal
     ];
 
     config = {

@@ -41,7 +41,7 @@
         };
 
         auto-save = {
-          after-delay.timeout = 4000;
+          after-delay.timeout = 10000;
           after-delay.enable = true;
         };
 
@@ -51,7 +51,7 @@
 
       };
 
-      theme = "nord";
+      theme = "iceberg-dark";
     };
   };
 }
