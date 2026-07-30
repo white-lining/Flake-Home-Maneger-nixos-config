@@ -12,18 +12,18 @@
       xkb.layout = "latam";
     };
 
-    greetd = {
-      enable = true;
-      package = pkgs.greetd.tuigreet;
-      restart = true;
-
-      setting = {
-        default_session = { 
-          command = "${pkgs.greetd.tuigreet}/bin/tuigreet -t -r --remember-session";
-          user = "greeter";
-        };
-      };
-    };
+    # greetd = {
+    #   enable = true;
+    #   package = pkgs.tuigreet;
+    #   restart = true;
+    #
+    #   settings = {
+    #     default_session = { 
+    #       command = "${pkgs.tuigreet}/bin/tuigreet -t -r --remember-session";
+    #       user = "greeter";
+    #     };
+    #   };
+    # };
 
     # displayManager = {
     #   defaultSession = "hyprland";

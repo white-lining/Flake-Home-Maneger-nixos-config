@@ -13,6 +13,9 @@
     ./config-modules/system_settings.nix
     # Program settings
     ./config-modules/system_programs.nix
+
+    # Login manager config.
+    ./config-modules/login.nix
   ];
 
   system.stateVersion = "25.11";

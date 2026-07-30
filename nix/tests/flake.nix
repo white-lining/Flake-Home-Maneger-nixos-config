@@ -12,8 +12,8 @@
     };
 
     nixvim.url = "github:nix-community/nixvim/nixos-25.11";
-    };
   };
+
 
   outputs = {
     self,
