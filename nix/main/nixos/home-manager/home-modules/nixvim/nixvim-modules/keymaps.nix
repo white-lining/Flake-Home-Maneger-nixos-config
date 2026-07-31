@@ -22,12 +22,6 @@
     }
 
     {
-      mode = "n";
-      key = "<leader>t";
-      action = "<cmd>ToggleTerm<CR>";
-    }
-
-    {
       mode = [ "n" "x" "o" ];
       key = "<leader>s";
       action = "<Plug>(leap)";

@@ -16,7 +16,7 @@
       # Session locking
       {
         label = "session-lock";
-        action = "wlogout";
+        action = "hyprlock";
         text = "Lock-l";
         keybind = "l";
       }

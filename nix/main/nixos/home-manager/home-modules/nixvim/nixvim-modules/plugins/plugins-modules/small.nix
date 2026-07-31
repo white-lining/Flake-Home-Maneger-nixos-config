@@ -34,21 +34,6 @@
     # Better w, e, b behaviour.
     spider.enable = true;
 
-    # Cursor animations.
-    smear-cursor.enable = true;
-
-    # Cursor line number highlight based on the mode.
-    modicator = {
-      enable = true;
-      settings = {
-        highlights = {
-          bold = false;
-          italic = true;
-        };
-        use_cursorline_background = false;
-      };
-    };
-
     # Jump through visible text very easily.
     leap = {
       enable = true;

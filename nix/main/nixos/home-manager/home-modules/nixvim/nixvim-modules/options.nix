@@ -14,6 +14,8 @@
     # Default completion
     completeopt = [
       "menuone"
+      "noselect"
+      "menuone"
     ];
 
     # search

@@ -8,7 +8,7 @@
         layer = "top";
         output = "HDMI-A-1";
         position = "top";
-        # height = 32;
+        height = 32;
 
         margin-top = 0;
         margin-left = 0;
@@ -56,9 +56,9 @@
         };
 
         "custom/identity" = {
-          format = "<span size='xx-large'></span>";
+          format = "<span size='xx-large'>  </span>";
           tooltip = false;
-          on-click = "w-logout";
+          on-click = "wlogout";
           expand = true;
         };
 
@@ -91,7 +91,7 @@
 
         "disk" = {
           interval = 20;
-          format = "<span size='xx-large'>󱠆</span>{percentage_used:2}%";
+          format = "<span size='xx-large'>󱠆 </span>{percentage_used:2}%";
         };
 
         "clock#1" = {
@@ -164,7 +164,7 @@
       #memory,
       #cpu,
       #disk {
-        color: #8ffdff;
+        color: #007fe0;
         background: #1c2b36;
       }
 

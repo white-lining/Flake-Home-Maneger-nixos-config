@@ -18,6 +18,8 @@
       python
       nix
       markdown
+      c
+      cpp
     ];
   };
 }
