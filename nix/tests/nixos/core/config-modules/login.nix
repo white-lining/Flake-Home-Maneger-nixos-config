@@ -1,10 +1,11 @@
 {
   pkgs,
   config,
+  pkgs-unstable,
   ...
 }: let
   tuigreet = "${pkgs.tuigreet}/bin/tuigreet";
-  hyprland-session = "${pkgs.hyprland}/share/wayland-sessions";
+  hyprland-session = "${pkgs-unstable.hyprland}/share/wayland-sessions";
 in {
   services.greetd = {
     enable = true;
