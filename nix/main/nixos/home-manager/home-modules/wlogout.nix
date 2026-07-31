@@ -16,8 +16,8 @@
       # Session locking
       {
         label = "session-lock";
-        action = "loginctl lock-session";
-        text = "lock-l";
+        action = "wlogout";
+        text = "Lock-l";
         keybind = "l";
       }
 
@@ -63,11 +63,11 @@
       }
       window {
         background-color: rgba(41, 48, 54, 0.5);
-        background-image: url("/home/kumoren/images/dark-forest.jpg");
+        background-image: url("/home/kumoren/HakurenNixos/resources/coldCrushingWater.jpg");
       }
 
       button {
-        background-color: rgba(38, 46, 54, 1);
+        background-color: rgba(38, 46, 54, 0.6);
         background-image: none;
         color: rgba(117, 253, 255, 1);
         border: 3px solid rgba(21, 117, 191, 1);

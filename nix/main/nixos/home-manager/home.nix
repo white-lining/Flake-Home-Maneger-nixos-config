@@ -52,7 +52,7 @@
     ./home-modules/bash.nix #
     ./home-modules/git.nix #
     ./home-modules/fuzzel.nix #
-    ./home-modules/waybar_block.nix # TODO: Create
+    ./home-modules/waybar_block.nix #
     ./home-modules/yazi.nix #
     ./home-modules/music.nix #
     ./home-modules/zsh.nix #

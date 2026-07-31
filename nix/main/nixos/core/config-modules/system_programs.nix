@@ -29,7 +29,6 @@
     hyprland = {
       enable = true;
       xwayland.enable = true;
-      # package = pkgs-unstable.hyprland;
     };
 
     gamemode.enable = true;

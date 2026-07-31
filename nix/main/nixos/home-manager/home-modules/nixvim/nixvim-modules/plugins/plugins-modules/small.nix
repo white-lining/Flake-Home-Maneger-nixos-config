@@ -65,9 +65,7 @@
     };
 
     nvim-tree = {
-
       enable = true;
-
     };
 
   };

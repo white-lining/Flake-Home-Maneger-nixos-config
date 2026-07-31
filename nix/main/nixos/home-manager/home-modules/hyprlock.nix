@@ -7,7 +7,7 @@
 
       background = [
         {
-          path = "/home/kumoren/images/nord_valley.png";
+          path = "/home/kumoren/HakurenNixos/resources/Behemoth.png";
           blur_passes = 2;
           blur_size = 2;
         }
@@ -31,14 +31,14 @@
           # Color for when failing the authorization
           fail_color = "rgba(21, 117, 191, 1.0)";
 
-          rounding = 2;
+          rounding = 0;
 
           font_family = "InconsolataLGC Nerd Font";
           placeholder_text = "Ware wa...";
           hide_input = false;
 
-          halign = "center";
-          valign = "center";
+          halign = "left";
+          valign = "bottom";
 
           shadow_passes = 2;
         }

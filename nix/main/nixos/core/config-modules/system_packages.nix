@@ -21,7 +21,6 @@
     pkgs.xfce.thunar
     pkgs.inxi
     pkgs.which
-    #    pkgs.sddm-astronaut
     pkgs.bibata-cursors
     pkgs.lutris
     pkgs.python3
