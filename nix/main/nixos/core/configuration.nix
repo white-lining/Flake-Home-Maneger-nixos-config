@@ -16,6 +16,9 @@
 
     # Login manager config.
     ./config-modules/login.nix
+
+    # Stylix
+    ./config-modules/stylix.nix
   ];
 
   system.stateVersion = "25.11";

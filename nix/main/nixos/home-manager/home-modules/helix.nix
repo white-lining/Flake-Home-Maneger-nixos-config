@@ -51,7 +51,7 @@
 
       };
 
-      theme = "iceberg-dark";
+      theme = "poimandres_storm";
     };
   };
 }

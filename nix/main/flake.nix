@@ -12,6 +12,8 @@
     };
 
     nixvim.url = "github:nix-community/nixvim/nixos-25.11";
+
+    stylix.url = "github:danth/stylix";
   };
 
 
@@ -21,6 +23,7 @@
     nixpkgs-unstable,
     home-manager,
     nixvim,
+    stylix,
     ...
   }@inputs: 
     let
@@ -37,6 +40,7 @@
         modules = [
           ./nixos/core/configuration.nix
           home-manager.nixosModules.home-manager
+          inputs.stylix.nixosModules.stylix
           {
             home-manager = {
               backupFileExtension = "home_backup";

@@ -30,5 +30,8 @@
     pkgs.helix
     pkgs.greetd
     pkgs.tuigreet
+    pkgs.clang
+    pkgs.less
+    pkgs-unstable.noctalia-shell
   ];
 }
