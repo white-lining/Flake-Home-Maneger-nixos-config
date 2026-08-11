@@ -18,7 +18,6 @@
       pkgs.zenity 
       pkgs.wlogout 
       pkgs.hyprlock 
-      pkgs.zoxide 
       pkgs.tmux 
       pkgs.mpd 
       pkgs.ncmpcpp 
@@ -30,7 +29,6 @@
       pkgs.cliphist
       pkgs.grim
       pkgs.slurp
-      pkgs.tmux
       pkgs.manga-cli
       pkgs.zathura
       pkgs.pup

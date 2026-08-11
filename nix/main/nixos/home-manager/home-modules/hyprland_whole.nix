@@ -27,8 +27,8 @@
         gaps_out = 0;
         border_size = 4;
 
-        "col.active_border" = "rgb(75fdff) rgb(75fdff) 150deg";
-        "col.inactive_border" = "rgb(293036) rgb(293036) 150deg";
+        #"col.active_border" = "rgb(75fdff) rgb(75fdff) 150deg";
+        #"col.inactive_border" = "rgb(293036) rgb(293036) 150deg";
 
         layout = "master";
       };
@@ -47,7 +47,7 @@
         blur = {
           enabled = true;
           size = 10;
-          passes = 1;
+          passes = 2;
           new_optimizations = true;
         };
       };

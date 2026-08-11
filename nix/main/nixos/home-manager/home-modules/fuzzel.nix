@@ -8,9 +8,9 @@
       main = {
 
         dpi-aware = "no";
-        font = "InconsolataLGC Nerd Font:size=16";
+        font = "InconsolataLGC Nerd Font:size=18";
         prompt = "";
-        lines = 10;
+        lines = 5;
         width = 35;
         show-actions = "yes";
         icons-enabled = "yes";
@@ -19,26 +19,26 @@
         exit-on-keyboard-focus-loss = "yes";
         horizontal-pad = 20;
         vertical-pad = 15;
-
+        icon-theme = "adwaita";
       };
 
       colors = {
 
-        background = "cbcee0ff";
-        text = "171f2bff";
-        match = "e8588dff";
-        selection = "171f2bff";
-        selection-text = "cbcee0ff";
-        selection-match = "a9e8e2ff";
-        border = "a9e8e2ff";
-        prompt = "e8588dff";
+        background = "2e3440ff";
+        text = "e3f4ffff";
+        match = "c8a5cfff";
+        selection = "4c566aff";
+        selection-text = "a2d9dbff";
+        selection-match = "5a8fb8ff";
+        border = "5a8fb8ff";
+        prompt = "90cfd1ff";
 
       };
 
       border = {
 
-        width = 2;
-        radius = 2;
+        width = 4;
+        radius = 1;
 
       };
     };

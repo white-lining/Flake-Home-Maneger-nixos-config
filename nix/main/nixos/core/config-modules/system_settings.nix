@@ -16,7 +16,11 @@
     XDG_CONFIG_HOME = "$HOME/.config";
     XDG_DATA_HOME = "$HOME/.local/share";
     XDG_BIN_HOME = "$HOME/.local/bin";
+    QT_QPA_PLATFORM = "wayland";
+    QT_QPA_PLATORMTHEME = "qt6ct";
   };
+
+  environment.pathsToLink = [ "/share/icons" "/share/pixmaps" ];
 
   nixpkgs.config.allowUnfree = true;
 

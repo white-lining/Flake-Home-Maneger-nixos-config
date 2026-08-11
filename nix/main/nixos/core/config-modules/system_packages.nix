@@ -33,5 +33,17 @@
     pkgs.clang
     pkgs.less
     pkgs-unstable.noctalia-shell
+    pkgs.nh
+    pkgs.nix-output-monitor
+    pkgs.nvd
+    pkgs.inotify-tools
+    pkgs.wl-clipboard
+    pkgs.rofi
+    pkgs.librsvg
+    pkgs.adwaita-icon-theme
+    pkgs.quickshell
+    pkgs.cava
+    pkgs.pavucontrol
+    pkgs.wttrbar
   ];
 }

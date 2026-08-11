@@ -11,13 +11,13 @@
         args = [ "--login" ];
       };
 
-      font = {
-        size = 14;
-        normal = {
-          family = "InconsolataLGC Nerd Font";
-          style = "Regular";
-        };
-      };
+      # font = {
+      #   size = 14;
+      #   normal = {
+      #     family = "InconsolataLGC Nerd Font";
+      #     style = "Regular";
+      #   };
+      # };
 
       cursor = {
         style = {
@@ -28,47 +28,47 @@
         blink_timeout = 0;
       };
 
-      colors = {
+      # colors = {
 
-        primary = {
-          background = "#262A37";
-          foreground = "#e3f3ff";
-        };
+      #   primary = {
+      #     background = "#262A37";
+      #     foreground = "#e3f3ff";
+      #   };
 
-        normal = {
-          black = "#262A37";
-          red = "#f06989";
-          green = "#66a8ff";
-          yellow = "#fff7c4";
-          blue = "#8cbeff";
-          magenta = "#d6feff"; 
-          cyan = "#c2feff";
-          white = "#e3f3ff";
-        };
+      #   normal = {
+      #     black = "#262A37";
+      #     red = "#f06989";
+      #     green = "#66a8ff";
+      #     yellow = "#fff7c4";
+      #     blue = "#8cbeff";
+      #     magenta = "#d6feff"; 
+      #     cyan = "#c2feff";
+      #     white = "#e3f3ff";
+      #   };
 
-        bright = {
-          black = "#333F4C";
-          red = "#f06989";
-          green = "#66a8ff";
-          yellow = "#fff7c4";
-          blue = "#8cbeff";
-          magenta = "#d6feff"; 
-          cyan = "#c2feff";
-          white = "#e3f3ff";
-        };
+      #   bright = {
+      #     black = "#333F4C";
+      #     red = "#f06989";
+      #     green = "#66a8ff";
+      #     yellow = "#fff7c4";
+      #     blue = "#8cbeff";
+      #     magenta = "#d6feff"; 
+      #     cyan = "#c2feff";
+      #     white = "#e3f3ff";
+      #   };
 
-        dim = {
-          black = "#353f4f";
-          red = "#f06989";
-          green = "#66a8ff";
-          yellow = "#fff7c4";
-          blue = "#8cbeff";
-          magenta = "#d6feff"; 
-          cyan = "#c2feff";
-          white = "#e3f3ff";
-        };
+      #   dim = {
+      #     black = "#353f4f";
+      #     red = "#f06989";
+      #     green = "#66a8ff";
+      #     yellow = "#fff7c4";
+      #     blue = "#8cbeff";
+      #     magenta = "#d6feff"; 
+      #     cyan = "#c2feff";
+      #     white = "#e3f3ff";
+      #   };
 
-      };
+      # };
     };
   };
 }

@@ -15,6 +15,22 @@
   };
   services.swww.enable = true;
 
+  gtk = {
+    enable = true;
+    iconTheme = {
+      name = "adwaita-icon-theme";
+      package = pkgs.adwaita-icon-theme;
+    };
+  };
+
+  qt = {
+    enable = true;
+    platformTheme.name = "qtct";
+    style = {
+      name = "kvantum";
+    };
+  };
+
   xdg.portal = {
     enable = true;
 
@@ -52,7 +68,8 @@
     ./home-modules/bash.nix #
     ./home-modules/git.nix #
     ./home-modules/fuzzel.nix #
-    ./home-modules/waybar_block.nix #
+    #./home-modules/waybar_block.nix
+    ./home-modules/waybar.nix #
     ./home-modules/yazi.nix #
     ./home-modules/music.nix #
     ./home-modules/zsh.nix #
@@ -60,4 +77,8 @@
     ./home-modules/terminal/tmux.nix #
     ./home-modules/terminal/ghostty.nix #
   ];
+
+  stylix.targets.hyprlock.enable = false;
+  stylix.targets.fuzzel.enable = false;
+  stylix.targets.waybar.enable = false;
 }

@@ -26,6 +26,16 @@
 
     firefox.enable = true;
 
+    dconf = {
+      enable = true;
+      profiles.user.databases = [ {
+        settings."org/gnome/desktop/interface" = {
+          icon-theme = "adwaita";
+          gtk-theme = "adwaita";
+        };
+      }];
+    };
+
     hyprland = {
       enable = true;
       xwayland.enable = true;
@@ -42,6 +52,8 @@
       enable = true;
       package = pkgs.jdk;
     };
+
+    gdk-pixbuf.modulePackages = [ pkgs.librsvg ];
   };
 
   xdg.portal = {
