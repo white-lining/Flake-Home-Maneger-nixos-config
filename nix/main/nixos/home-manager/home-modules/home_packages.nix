@@ -5,7 +5,7 @@
       pkgs.cbonsai 
       pkgs.pipes 
       pkgs.clock-rs
-      pkgs.cat
+      pkgs.bat
       pkgs.mako 
       pkgs.libnotify
       pkgs.onlyoffice-desktopeditors 
