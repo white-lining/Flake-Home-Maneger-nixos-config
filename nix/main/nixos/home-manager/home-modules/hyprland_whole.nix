@@ -74,7 +74,7 @@
         "$mainMod, Y, killactive"
         "$mainMod, T, togglefloating"
         "$mainMod, space, exec, fuzzel"
-        "$mainMod, N, exec, wlogout"
+        "$mainMod, N, exec, wlogout -b 1 -c 20 -r 20 -L 1700 -T 325 -B 325"
         "$mainMod, 9, exec, hyprpicker"
         "$mainMod, 8, exec, grim"
         "SUPER, F, fullscreen"

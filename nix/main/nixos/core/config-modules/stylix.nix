@@ -12,15 +12,15 @@
     base04 = "#e3f4ff"; 
     base05 = "#e3f4ff"; 
     base06 = "#e3f4ff"; 
-    base07 = "#a2d9db"; 
-    base08 = "#89abc4"; 
-    base09 = "#4683a3";
+    base07 = "#c7faff"; #
+    base08 = "#9ad4fb"; 
+    base09 = "#386fcd";
     base0A = "#c8a5cf"; 
-    base0B = "#9cdbd7";
+    base0B = "#a3f1fd";
     base0C = "#5a8fb8"; 
-    base0D = "#89b4cc";
-    base0E = "#c8a5cf";
-    base0F = "#90cfd1";
+    base0D = "#def9ff";
+    base0E = "#eec6f5";
+    base0F = "#c8f8f7";
   };
 
   # stylix.targets.hyprlock.enable = false;

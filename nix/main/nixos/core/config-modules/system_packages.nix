@@ -2,7 +2,9 @@
 {
   environment.systemPackages = [
     pkgs.wget
+    pkgs.jq
     pkgs.vim
+    pkgs.caligula
     pkgs.udiskie
     pkgs.killall
     pkgs.git
@@ -45,5 +47,7 @@
     pkgs.cava
     pkgs.pavucontrol
     pkgs.wttrbar
+    pkgs.vscode-css-languageserver
+    pkgs.nixd
   ];
 }
