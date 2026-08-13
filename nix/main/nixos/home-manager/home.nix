@@ -76,6 +76,7 @@
     ./home-modules/terminal/starship.nix #
     ./home-modules/terminal/tmux.nix #
     ./home-modules/terminal/ghostty.nix #
+    ./home-modules/rofi/rofi.nix
   ];
 
   stylix.targets.hyprlock.enable = false;

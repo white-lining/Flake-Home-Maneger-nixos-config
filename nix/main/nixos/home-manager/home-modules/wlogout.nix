@@ -60,20 +60,24 @@
         font-size: 16px;
         font-weight: bold;
         transition: 200ms ease-in;
+        background-image: none;
+        box-shadow: none;
       }
       window {
-        background-color: rgba(41, 48, 54, 0.5);
-        background-image: url("/home/kumoren/HakurenNixos/resources/coldCrushingWater.jpg");
+        background-color: rgba(46, 52, 64, 0.5);
       }
 
       button {
-        background-color: rgba(38, 46, 54, 0.6);
-        background-image: none;
-        color: rgba(117, 253, 255, 1);
-        border: 3px solid rgba(21, 117, 191, 1);
-        border-radius: 2px;
-        margin: 3px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        background-color: rgba(76, 86, 106, 0.6);
+        color: rgba(227, 244, 255, 1);
+        border: 3px solid rgba(238, 198, 245, 1);
+        border-radius: 1px;
+        margin: 2px;
+      }
+
+      button:focus, button:active, button:hover {
+        outline-style: none;
+        background-color: #2e3440;
       }
       
     '';

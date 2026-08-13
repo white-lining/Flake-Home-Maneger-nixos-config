@@ -28,6 +28,9 @@
                            "custom/left_moon" 
                            "hyprland/workspaces"
                            "custom/right_moon"
+                           "custom/left_moon"
+                           "custom/launcher"
+                           "custom/right_moon"
                          ];
         modules-right = [ 
                           "custom/left_moon"  
@@ -94,8 +97,17 @@
         };
 
         "custom/identity" = {
-          format = "<span size='x-large'>󰄿</span>";
-          on-click = "alacritty";
+          format = "<span size='x-large'>󰌪</span>";
+          on-click = "wlogout";
+          tooltip = true;
+          tooltip-format = "Rest as you see fit...Please";
+        };
+
+        "custom/launcher" = {
+          format = "<span size='x-large'> </span>";
+          tooltip = true;
+          tooltip-format = "Explore the sky of posiblities";
+          on-click = "rofi -show drun";
         };
 
         "custom/left_moon" = {
@@ -233,6 +245,7 @@
         font-weight: bold;
       }
 
+      #custom-launcher,
       #custom-identity {
         background-color: #2e3440;
         color: #a2d9db;
