@@ -73,7 +73,7 @@
         "$mainMod, U, exec, alacritty"
         "$mainMod, Y, killactive"
         "$mainMod, T, togglefloating"
-        "$mainMod, space, exec, fuzzel"
+        "$mainMod, space, exec, rofi -show drun"
         "$mainMod, N, exec, wlogout -b 1 -c 20 -r 20 -L 1700 -T 325 -B 325"
         "$mainMod, 9, exec, hyprpicker"
         "$mainMod, 8, exec, grim"

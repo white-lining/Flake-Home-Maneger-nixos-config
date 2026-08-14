@@ -98,7 +98,7 @@
 
         "custom/identity" = {
           format = "<span size='x-large'>󰌪</span>";
-          on-click = "wlogout";
+          on-click = "wlogout -b 1 -c 20 -r 20 -L 1700 -T 325 -B 325";
           tooltip = true;
           tooltip-format = "Rest as you see fit...Please";
         };
