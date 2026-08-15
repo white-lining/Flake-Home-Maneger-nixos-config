@@ -40,5 +40,5 @@
 
   stylix.polarity = "dark";
 
-  stylix.image = /home/kumoren/images/whiteShade.png;
+  #stylix.image = /home/kumoren/images/whiteShade.png;
 }

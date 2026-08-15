@@ -49,5 +49,6 @@
     pkgs.wttrbar
     pkgs.vscode-css-languageserver
     pkgs.nixd
+    pkgs.playerctl
   ];
 }

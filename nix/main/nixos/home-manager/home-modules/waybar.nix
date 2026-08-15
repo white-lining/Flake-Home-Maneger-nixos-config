@@ -20,6 +20,12 @@
                          "memory"
                          "cpu"
                          "custom/right_moon"
+                         "custom/left_moon"  
+                         "network" 
+                         "custom/right_moon"
+                         "custom/left_moon"  
+                         "custom/wallchange" 
+                         "custom/right_moon"
                        ];
         modules-center = [ 
                            "custom/left_moon"
@@ -81,7 +87,7 @@
           format = "{icon} {volume}%";
           format-muted = "󰝟";
           tooltip = true;
-          tooltip-format = "Volume: {volume}%|left click: volume up, right click: Volume down, central click: Volume control.";
+          tooltip-format = "Volume : {volume}%.\nleft click: volume up.\nright click: Volume down.\ncentral click: Volume control.";
           format-icons = {
             headphone = "";
             default = [
@@ -125,9 +131,19 @@
           tooltip = false;
         };
 
+        "custom/wallchange" = {
+          format = "<span size='x-large'></span>";
+          exec = "echo ; echo 󰆊 switch wallpaper";
+          on-click = "swww img --transition-type grow --transition-pos 0.071,0.988 --transition-step 255 --transition-fps 60 /home/kumoren/images/blueAppreciation.jpg";
+          on-click-middle = "swww img --transition-type grow --transition-pos 0.071,0.988 --transition-step 255 --transition-fps 60 /home/kumoren/images/siren.png";
+          on-click-right = "swww img --transition-type grow --transition-pos 0.071,0.988 --transition-step 255 --transition-fps 60 /home/kumoren/images/blueDragons.jpg";
+          on-scroll-up = "swww img --transition-type grow --transition-pos 0.071,0.988 --transition-step 255 --transition-fps 60 /home/kumoren/images/Glint.jpg";
+          on-scroll-down = "swww img --transition-type grow --transition-pos 0.071,0.988 --transition-step 255 --transition-fps 60 /home/kumoren/images/CyndiWave.png";
+        };
+
         "clock" = {
           timezone = "America/Argentina/Cordoba";
-          format = "{:%H:%M}";
+          format = "󰃰 {:%m-%d-%H:%M}";
           format_alt = "{:%A, %B %d, %Y (%R)} 󰃰 ";
           tooltip-format = "<tt><small><span size='large'>{calendar}</span></small></tt>";
           calendar = {
@@ -148,16 +164,16 @@
         };
 
         "memory" = {
-          format = " {}% ";
+          format = " {}% ";
           tooltip = true;
-          tooltip-format = "RAM: Used {used:0.1f}G / Free {total:0.1f}G";
+          tooltip-format = "RAM: Used {used:0.1f}G / Total {total:0.1f}G";
           interval = 4;
         };
 
         "disk" = {
           interval = 30;
           unit = "GB";
-          format = " {percentage_used:2}% ";
+          format = "󱘾 {percentage_used:2}% ";
           path = "/";
           tooltip = true;
           tooltip-format = "Root: Used {specific_used:0.2f}G / Free: {specific_free:0.2f}G";
@@ -165,15 +181,36 @@
 
         "cpu" = {
           interval = 5;
-          format = "󰢻{usage:2}%";
+          format = " {usage:2}%";
+        };
+
+        "temperature" = { #Doesn' work
+          thermal-zone = 2;
+          critical-threshold = 80;
+          hwmon-path = "/sys/class/hwmon/hwmon2/temp_input";
+          format-critical = "{icon} {temperature}";
+          format = "{icon} {temperature}°C";
+          format-icons = [ "" "" ""];
         };
 
         "custom/weather" = {
           format = "{}°";
           tooltip = true;
-          interval = 60;
+          interval = 600;
           exec = "wttrbar --nerd --location Rio_Cuarto";
           return-type = "json";
+        };
+
+        "network" = {
+          tooltip = true;
+          format-wifi = "{icon}";
+          format-icons = [ "󰤟" "󰤢" "󰤥" ];
+          format-ethernet = "󰈀 ";
+          tooltip-format = "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>";
+          format-linked = "󰈀 {ifname} (No IP)";
+          format-disconnected = " ";
+          tooltip-format-disconnected = "Disconnected";
+          interval = 5;
         };
       };
     };
@@ -191,12 +228,12 @@
 
       tooltip {
         background-color: #4c566a;
-        border: 1px solid #89abc4;
-        border-radius: 8px;
+        border: 3px solid #eec6f5;
+        border-radius: 2px;
       }
 
       tooltip label {
-        color: #c8a5cf;
+        color: #def9ff;
       }
 
       menu {
@@ -222,22 +259,22 @@
       }
 
       #workspaces button {
-        color: #a8a5cf;
+        color: #9ad4fb;
         transition: all 0.2s ease-in-out;
       }
 
       #workspaces button.empty {
-        color: #89abc4;
+        color: #5a8fb8;
       }
 
       #workspaces button.active {
-        color: #a2d9db;
+        color: #c7faff;
         font-weight: bold;
       }
 
       #workspaces button.urgent {
-        background-color: #c8a5cf;
-        color: #2e3440;
+        background-color: #4c566a;
+        color: #def9ff;
       }
 
       #clock {
@@ -248,7 +285,7 @@
       #custom-launcher,
       #custom-identity {
         background-color: #2e3440;
-        color: #a2d9db;
+        color: #c7faff;
       }
 
       #custom-left_moon,
@@ -264,9 +301,35 @@
         background-color: #2e3440;
       }
 
-      custom-weather {
+      #custom-weather.sunny {
         background-color: #2e3440;
-        color: #5a8fb8;
+        color: #eec6f5;
+      }
+
+      #custom-weather.cloudy {
+        background-color: #2e3440;
+        color: #9ad4fb;
+      }
+
+      #network {
+        background-color: #2e3440;
+        color: #eec6f5;
+        padding-left: 2px;
+      }
+
+      #pulseaudio {
+        background-color: #2e3440;
+        color: #9ad4fb;
+      }
+
+      #pulseaudio.muted {
+        background-color: #2e3440;
+        color: #386fcd;
+      }
+
+      #custom-wallchange {
+        background-color: #2e3440;
+        color: #9ad4fb;
       }
 
       #custom-spacer {
