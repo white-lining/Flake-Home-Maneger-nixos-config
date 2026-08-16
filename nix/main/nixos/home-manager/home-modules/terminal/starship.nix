@@ -9,7 +9,7 @@
       add_newline = true;
 
       format = lib.concatStrings [
-        " $hostname/"
+        "  $hostname/"
         "$username"
         # "$line_break"
         "$directory"
@@ -18,7 +18,7 @@
         "$git_status"
         "$nix_shell"
         "$line_break"
-        " ($character)  "
+        "  $character"
       ];
 
       fill = {
@@ -33,9 +33,9 @@
       };
 
       character = {
-        success_symbol = "";
-        error_symbol = "";
-        vicmd_symbol = "󱢖";
+        success_symbol = "[>>](bold blue)";
+        error_symbol = "[❮](bold red)";
+        vicmd_symbol = "[❯](bold cyan)";
       };
 
       username = {
