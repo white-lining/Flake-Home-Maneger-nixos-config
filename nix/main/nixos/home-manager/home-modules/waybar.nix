@@ -205,7 +205,7 @@
           tooltip = true;
           format-wifi = "{icon}";
           format-icons = [ "󰤟" "󰤢" "󰤥" ];
-          format-ethernet = "󰈀 ";
+          format-ethernet = "<span size='x-large'> </span>";
           tooltip-format = "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>";
           format-linked = "󰈀 {ifname} (No IP)";
           format-disconnected = " ";
@@ -314,7 +314,7 @@
       #network {
         background-color: #2e3440;
         color: #eec6f5;
-        padding-left: 2px;
+        padding-left: 4px;
       }
 
       #pulseaudio {
